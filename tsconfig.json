@@ -5,17 +5,11 @@
     "exclude": [
         "node_modules/*"
     ],
-    "types": [
-        "svelte",
-        "node",
-    ],
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
-        "moduleResolution": "node",
-        "skipLibCheck": true,
-        "target": "ES2017",
-        "module": "esnext",
+        "moduleResolution": "Node",
+        "target": "ESNext",
         "types": [
             "node",
             "svelte"

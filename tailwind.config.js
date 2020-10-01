@@ -1,10 +1,18 @@
 module.exports = {
-    purge: ["./src/**/*.svelte", "./public/**/*.html"],
+    future: {
+        removeDeprecatedGapUtilities: true,
+        purgeLayersByDefault: true,
+    },
+    purge: {
+        layers: ['utilities'],
+        content: ["./src/**/*.svelte"],
+        options: {
+            keyframes: true
+        }
+    },
     theme: {
         extend: {},
     },
     variants: {},
-    plugins: [
-        // require('@tailwindcss/ui') comment out for adding tailwind css
-    ],
+    plugins: [],
 }
